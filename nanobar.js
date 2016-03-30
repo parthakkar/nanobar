@@ -20,9 +20,10 @@
 			cssCont = {
 				width: '100%',
 				height: '8px',
-				zIndex: 9999,
-				top : '0',
-        border: '.5px solid #034bac',
+				//zIndex: 9999,
+				top : '0px',
+				position: 'relative',
+        			border: '.5px solid #034bac',
 			},
 			// bar styles
 			cssBar = {
