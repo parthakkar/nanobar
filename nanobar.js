@@ -18,7 +18,9 @@
 		var addCss, Bar, Nanobar, move, place, init,
 			// container styles
 			cssCont = {
-				width: '100%',
+				width: '50%',
+				margin: 'auto',
+				float: 'none',
 				height: '8px',
 				//zIndex: 9999,
 				top : '0px',
