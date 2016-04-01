@@ -41,7 +41,7 @@
 			for (i in css) {
 				el.style[i] = css[i];
 			}
-			el.style.float = 'none';
+			el.style.float = 'none'; 
 		};
 
 		// animation loop
