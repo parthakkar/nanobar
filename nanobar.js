@@ -20,7 +20,6 @@
 			cssCont = {
 				width: '50%',
 				margin: 'auto',
-				float: 'none',
 				height: '8px',
 				//zIndex: 9999,
 				top : '0px',
@@ -42,7 +41,7 @@
 			for (i in css) {
 				el.style[i] = css[i];
 			}
-			el.style.float = 'left';
+			el.style.float = 'none';
 		};
 
 		// animation loop
