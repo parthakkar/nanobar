@@ -18,10 +18,13 @@
 		var addCss, Bar, Nanobar, move, place, init,
 			// container styles
 			cssCont = {
-				width: '100%',
-				height: '4px',
-				zIndex: 9999,
-				top : '0'
+				width: '50%',
+				margin: 'auto',
+				height: '8px',
+				//zIndex: 9999,
+				top : '0px',
+				position: 'relative',
+        			border: '.5px solid #034bac',
 			},
 			// bar styles
 			cssBar = {
@@ -38,7 +41,7 @@
 			for (i in css) {
 				el.style[i] = css[i];
 			}
-			el.style.float = 'left';
+			el.style.float = 'none';
 		};
 
 		// animation loop
@@ -50,10 +53,10 @@
 				place.call( this, this.here );
 				this.moving = false;
 				if (this.width == 100) {
-					this.el.style.height = 0;
+					/*this.el.style.height = 0;
 					setTimeout( function () {
 						self.cont.el.removeChild( self.el );
-					}, 300);
+					}, 300);*/
 				}
 			} else {
 				place.call( this, this.width - (dist/4) );
@@ -135,10 +138,11 @@
 			// expand bar
 			this.bars[0].go( p );
 	
+      /*
 			// create new bar at progress end
 			if (p == 100) {
 				init.call( this );
-			}
+			}*/
 		};
 
 		return Nanobar;
